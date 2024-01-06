@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deactivation Form</title>
+    <style>
+        h1{
+            background-color:Red;
+            text-align: center;
+        }
+        h2{
+            font-size: large;
+        }
+        h3{
+            font-size: large;
+        }
+    </style>
+</head>
+<body bgcolor="violet">
+    <h1>Deactivation Form</h1>
+    <fieldset>
+    <legend>Deactivate Account</legend>
+    <form action=""> 
+        <label for="name">Name:</label> 
+        <input type="text" name="name">
+        <br>
+        <label for="uname">Username:</label>
+        <input type="text" name="uname">
+        <br>
+        <label for="id">Id:</label>
+        <input type="text" name="id">
+        <br>
+        <label for="no">Number:</label>
+        <input type="text" name="no">
+        <br>
+        <label for="dob">DOB:</label>
+        <input type="date" name="dob">
+        <br>
+        <h2>Select reason for deactivating:</h2>
+        <input type="checkbox" name="k" id="k" value="Created New Account">
+        <label for="k">Created New Account</label>
+        <br>
+        <input type="checkbox" name="l" id="l" value="Having Issue With the Account">
+        <label for="l">Having Issue with the Account</label>
+        <br>
+        <input type="checkbox" name="m" id="m" value="No Longer Interested">
+        <label for="m">No Longer Interested</label>
+        <br>
+        <input type="checkbox" name="n" id="n" value="Using Another App">
+        <label for="n">Using Another App</label>
+        <h3>Disclaimer*: Once the account is deactivated it cannot be obtained back</h3>
+        <h4>Comment:</h4>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <button onclick="alert('Successfully Deactivated')">Submit</button>
+        
+    </form>
+    </fieldset>
+    
+
+    
+</body>
+</html>
