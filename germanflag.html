@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Flag</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+        }
+      canvas{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+   
+    <canvas id="germanFlag" width="300" height="300" ondblclick="erase()" ></canvas>
+
+    <script>
+        const canvas = document.getElementById('germanFlag');
+        const c = canvas.getContext('2d');
+        c.fillStyle = "black";
+        c.fillRect(0, 0, canvas.width, canvas.height/3);
+        c.fillStyle = 'red';
+        c.fillRect(0, canvas.height/3, canvas.width, canvas.height/3);
+        c.fillStyle = 'yellow';
+        c.fillRect(0, (canvas.height/3)*2,canvas.width, canvas.height/3);
+        </script>
+        <script>
+            function erase(){
+            var x=document.getElementById("germanFlag");
+            var a=x.getAttribute("height");
+            var b=x.getAttribute("width");
+            x.setAttribute("height",Math.floor(parseInt(a)/3));
+            x.setAttribute("width",Math.floor(parseInt(b)/3));
+
+            }
+
+        </script>
+        
+</body>
+</html>
